@@ -1,0 +1,12 @@
+services:
+    #Security
+    trivago.api_key_bundle.authenticator:
+        class: AsQuel\ApiKeyBundle\Security\Authenticator
+        arguments:
+            - @trivago.api_key_bundle.request_matcher
+        tags:
+            - { name: kernel.event_listener, event: kernel.request, method: onKernelRequest, priority: 255 }
+
+    trivago.api_key_bundle.request_matcher:
+        class: Symfony\Component\HttpFoundation\RequestMatcher
+        public: false
