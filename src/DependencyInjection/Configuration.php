@@ -29,7 +29,7 @@ class Configuration implements ConfigurationInterface
                 ->booleanNode('is_header')->defaultTrue()->end()
                 ->scalarNode('parameter_name')->defaultValue('X-API-KEY')->end()
                 ->scalarNode('api_key_value')->isRequired()->end()
-                ->scalarNode('authenticator_service')->defaultValue('trivago.api_key_bundle.authenticator')->end()
+                ->scalarNode('authenticator_service')->defaultValue('asquel.api_key_bundle.authenticator')->end()
             ->end();
         $this->addUrlsSection($rootNode);
         return $treeBuilder;

@@ -1,10 +1,5 @@
 <?php
-/**
- * This file is part of the hestia project.
- *
- * Copyright (c) 2015, Trivago GmbH
- * All rights reserved.
- */
+
 namespace AsQuel\ApiKeyBundle\DependencyInjection;
 
 use Symfony\Component\Config\FileLocator;
@@ -14,14 +9,14 @@ use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
 
 
 /**
- * Class TrivagoApiKeyExtension
+ * Class AsQuelApiKeyExtension
  *
  * @package   AsQuel\ApiKeyBundle\DependencyInjection
 
  * @author    Axel Barbier <axel.barbier@gmail.com>
  *
  */
-class TrivagoApiKeyExtension extends Extension
+class AsQuelApiKeyExtension extends Extension
 {
     /**
      * {@inheritDoc}

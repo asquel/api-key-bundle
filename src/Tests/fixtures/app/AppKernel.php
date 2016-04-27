@@ -13,7 +13,7 @@ class AppKernel extends \Symfony\Component\HttpKernel\Kernel
             new Symfony\Bundle\MonologBundle\MonologBundle(),
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
             new Symfony\Bundle\SecurityBundle\SecurityBundle(),
-            new AsQuel\ApiKeyBundle\TrivagoApiKeyBundle(),
+            new AsQuel\ApiKeyBundle\AsQuelApiKeyBundle(),
         );
     }
 
